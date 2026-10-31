@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sherlog - privacy policy</title>
+  <style>
+    body { font: 14px system-ui, -apple-system, "Segoe UI", sans-serif; margin: 28px auto; padding: 0 16px; max-width: 680px; color: #1a1a1a; line-height: 1.6; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 15px; margin: 24px 0 6px; color: #0f3d5c; }
+    p.meta { color: #5a6270; margin: 0 0 20px; }
+    ul { padding-left: 20px; }
+    li { margin: 3px 0; }
+    code { background: #eef0f3; padding: 1px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Sherlog privacy policy</h1>
+  <p class="meta">Last updated: 28 October 2026</p>
+
+  <p>
+    Sherlog is a Chrome extension that helps diagnose failed scheduled processes
+    in Oracle Fusion. This page explains what data it handles, why, and who
+    processes it.
+  </p>
+
+  <h2>What Sherlog reads</h2>
+  <p>
+    Sherlog runs only on Oracle Fusion pages (<code>*.oraclecloud.com</code>). On
+    the Scheduled Processes screen it reads, for each row, the <strong>request
+    ID</strong>, <strong>process name</strong> and <strong>status</strong> so it
+    can show a diagnose icon. It does not read other pages, your browsing
+    history, passwords or Fusion credentials.
+  </p>
+
+  <h2>What is sent, and when</h2>
+  <p>Nothing leaves your browser until you press <strong>Diagnose</strong> or rate an answer. Then:</p>
+  <ul>
+    <li>The request ID, process name and status of that one process are sent to the Sherlog backend.</li>
+    <li>The backend fetches that process's <strong>log and output</strong> from Oracle Fusion using its own service account. These can contain business data, such as journal, invoice or payment details, depending on the process.</li>
+    <li>With each request the backend records your <strong>IP address</strong>, browser user agent and the extension version, to limit request rates and to troubleshoot.</li>
+    <li>If you rate a diagnosis, your rating and any comment you type are saved with it.</li>
+  </ul>
+
+  <h2>Why it is used</h2>
+  <p>
+    Only to diagnose the scheduled process you asked about, and to improve the
+    quality of future diagnoses by reviewing past answers and their ratings.
+    It is not used for advertising, profiling, credit decisions or anything
+    unrelated to this purpose.
+  </p>
+
+  <h2>Who processes it</h2>
+  <ul>
+    <li><strong>The Sherlog backend</strong>, operated by us, which stores diagnoses, ratings and the details above in its database.</li>
+    <li><strong>AI models reached through <a href="https://openrouter.ai">OpenRouter</a></strong>, which receive the process log and output to produce the diagnosis. They act as service providers for this purpose only.</li>
+  </ul>
+  <p>We do not sell or share this data with anyone else.</p>
+
+  <h2>What is stored in your browser</h2>
+  <p>
+    Only Sherlog's settings (the backend address) and your preferred panel width.
+    You can clear them by removing the extension.
+  </p>
+
+  <h2>How long it is kept</h2>
+  <p>
+    Diagnoses, ratings and request details are kept for [RETENTION PERIOD, e.g.
+    12 months] and then deleted. You can ask for data linked to your requests to
+    be deleted sooner by contacting us.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests about this policy: [CONTACT EMAIL].</p>
+</body>
+</html>
